@@ -1,8 +1,7 @@
 import React from 'react'
 
 
-export default function 
-Featured({items}){
+export default function Featured({ items = [] }) {
 return (
 <section id="properties" className="featured">
 <h2>Featured Properties</h2>

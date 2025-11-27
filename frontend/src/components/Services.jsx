@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function Services({items}){
+export default function Services({ items = [] }) {
 return (
 <section className="services">
 <h2>Our Services</h2>
