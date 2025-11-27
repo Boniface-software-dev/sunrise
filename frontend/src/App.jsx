@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import Featured from './components/Featured'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App(){
+const [services, setServices] = useState([])
+const [featured, setFeatured] = useState([])
+
+
+useEffect(()=>{
+axios.get('/api/services')
+.then(r=>setServices(r.data))
+.catch(e=>console.error(e))
+
+
+axios.get('/api/featured')
+.then(r=>setFeatured(r.data))
+.catch(e=>console.error(e))
+}, [])
+
+
+return (
+<div>
+<Hero />
+<main>
+<Services items={services} />
+<Featured items={featured} />
+</main>
+</div>
+)
 }
-
-export default App
