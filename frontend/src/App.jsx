@@ -3,6 +3,8 @@ import axios from 'axios'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Featured from './components/Featured'
+import Footer from "./components/Footer";
+
 
 export default function App() {
   // 1. Initialize with empty arrays so the page loads without crashing
