@@ -77,7 +77,9 @@ return (
       <div className="footer-bottom">
         <p>© {year} Sunrise Homes. All rights reserved.</p>
       </div>
-      
+
+      <button className="back-to-top" onClick={scrollToTop}>↑ Back to Top</button>
+
     </footer>
   );
 }
