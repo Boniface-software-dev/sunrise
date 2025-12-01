@@ -6,7 +6,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
       return (
     <footer className="footer">
-      <div className="footer-container"></div>
+      <div className="footer-container">
 
         {/* ---------------------------------------------
             Column 1: Brand name and short description

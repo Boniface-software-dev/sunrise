@@ -90,3 +90,11 @@ body {
 @media (max-width:600px){
   .icons { flex-direction:column; }
 }
+
+.footer {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+}
+----------------------------------
