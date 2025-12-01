@@ -130,3 +130,6 @@ body {
   text-decoration: none;
 }
 
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
