@@ -15,3 +15,17 @@ export default function Footer() {
           <h3>Sunrise Homes</h3>
           <p>Your trusted partner in finding the perfect home!</p>
         </div>
+
+        {/* ---------------------------------------------
+            Column 3: Contact information
+        --------------------------------------------- */}
+        <div className="footer-col">
+          <h4>Contact</h4>
+          <p>📍 Nairobi, Kenya</p>
+          <p>📞 +254 700 000 000</p>
+          <p>✉ info@sunrisehomes.com</p>
+        </div>
+
+      </div>
+
+      
