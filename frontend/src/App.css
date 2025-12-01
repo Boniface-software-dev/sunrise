@@ -125,4 +125,8 @@ body {
   margin: 6px 0;
 }
 
+.footer-col ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
 
