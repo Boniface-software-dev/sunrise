@@ -47,6 +47,7 @@ export default function App() {
         */}
         <Services items={services} />
         <Featured items={featured} />
+        <Footer />
       </main>
     </div>
   )
