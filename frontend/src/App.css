@@ -70,25 +70,140 @@ body {
   max-width:180px;
 }
 
-.featured {
-  padding:40px 20px;
+/* CONTAINER */
+.featured-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.card img {
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:10px;
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #333; /* Or use white if your page background is dark */
+  margin-bottom: 10px;
 }
 
-@media (max-width:600px){
-  .icons { flex-direction:column; }
+.section-header p {
+  color: #666;
+}
+
+/* GRID LAYOUT */
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARD STYLING */
+.property-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* IMAGE AREA */
+.card-image-wrapper {
+  position: relative;
+  height: 220px;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #ff9800; /* Sunrise Orange */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.status-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CARD CONTENT */
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h4 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #1e1e1e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." if title is too long */
+}
+
+.address {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* BEDS & BATHS ROW */
+.card-features {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* BUTTON */
+.view-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #ff9800;
+  color: #ff9800;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: auto; /* Pushes button to bottom */
+}
+
+.view-btn:hover {
+  background-color: #ff9800;
+  color: white;
 }
 
 /* --- VARIABLES --- */
