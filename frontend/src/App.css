@@ -92,7 +92,7 @@ body {
 }
 
 .footer {
-  background: #1e1e1e;
+  background: linear-gradient(180deg, var(--orange-1), var(--orange-2));
   color: #fff;
   padding: 40px 20px 20px;
   margin-top: 50px;

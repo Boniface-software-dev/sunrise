@@ -19,7 +19,21 @@ export default function Footer() {
   };
       return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-top">
+        <h2>Stay Updated</h2>
+        <p>Get the latest property updates, listings, and news directly to your inbox.</p>
+
+        <form className="newsletter" onSubmit={handleSubscribe}>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
 
         {/* ---------------------------------------------
             Column 1: Brand name and short description
