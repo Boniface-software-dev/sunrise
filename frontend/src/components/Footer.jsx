@@ -7,11 +7,11 @@ export default function Footer() {
       return (
     <footer className="footer">
       <div className="footer-container"></div>
-      
+
         {/* ---------------------------------------------
             Column 1: Brand name and short description
         --------------------------------------------- */}
         <div className="footer-col">
           <h3>Sunrise Homes</h3>
-          <p>Your trusted partner in finding the perfect home.</p>
+          <p>Your trusted partner in finding the perfect home!</p>
         </div>
