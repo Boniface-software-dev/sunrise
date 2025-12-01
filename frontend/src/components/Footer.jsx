@@ -17,7 +17,7 @@ export default function Footer() {
     alert(`Subscribed: ${email}`);
     setEmail("");
   };
-      return (
+return (
     <footer className="footer">
       <div className="footer-top">
         <h2>Stay Updated</h2>
@@ -38,9 +38,20 @@ export default function Footer() {
         {/* ---------------------------------------------
             Column 1: Brand name and short description
         --------------------------------------------- */}
+        <div className="footer-container">
         <div className="footer-col">
           <h3>Sunrise Homes</h3>
           <p>Your trusted partner in finding the perfect home!</p>
+        </div>
+
+        <div className="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero" onClick={scrollToTop}>Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#featured">Featured Properties</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
 
         {/* ---------------------------------------------
