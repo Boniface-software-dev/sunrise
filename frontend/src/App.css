@@ -112,3 +112,7 @@ body {
   margin-bottom: 10px;
 }
 
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
