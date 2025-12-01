@@ -28,4 +28,12 @@ export default function Footer() {
 
       </div>
 
-      
+      {/* ---------------------------------------------
+          Footer bottom section with dynamic year
+      --------------------------------------------- */}
+      <div className="footer-bottom">
+        <p>© {year} Sunrise Homes. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}
