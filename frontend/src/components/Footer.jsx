@@ -62,8 +62,13 @@ return (
           <p>📍 Nairobi, Kenya</p>
           <p>📞 +254 700 000 000</p>
           <p>✉ info@sunrisehomes.com</p>
-        </div>
 
+          <div className="social-icons">
+            <a href="https://facebook.com/sunrisehomes" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://twitter.com/sunrisehomes" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://instagram.com/sunrisehomes" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
       </div>
 
       {/* ---------------------------------------------
@@ -72,6 +77,7 @@ return (
       <div className="footer-bottom">
         <p>© {year} Sunrise Homes. All rights reserved.</p>
       </div>
+      
     </footer>
   );
 }
