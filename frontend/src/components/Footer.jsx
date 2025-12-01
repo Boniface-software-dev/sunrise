@@ -1,9 +1,22 @@
 import React from "react";
+import React, { useState } from "react";
+
 
 export default function Footer() {
 
   // Get the current year dynamically for the copyright text
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear();  
+  const [email, setEmail] = useState("");
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    alert(`Subscribed: ${email}`);
+    setEmail("");
+  };
       return (
     <footer className="footer">
       <div className="footer-container">
